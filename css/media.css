@@ -82,6 +82,12 @@
   }
 }
 
+@media (max-width: 1356px) {
+  .trekutnik {
+    top: 126px;
+  }
+}
+
 
 
 @media (max-width: 1290px) {
@@ -302,4 +308,16 @@ left: -70%;
   text-align: center;
 }
 
+}
+
+@media (max-width: 830px) {
+.trekutnik {
+top: 75px;
+}
+}
+
+@media (max-width: 758px) {
+.trekutnik {
+top: 28px;
+}
 }

@@ -18,13 +18,12 @@ body {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .firstBlock {
@@ -608,14 +607,12 @@ right: 1px;
 
 .trekutnik {
   height: 10px;
-  /* position: relative;
-  top: 155.6px; */
-  position: absolute;
-  top: 825px;
+  position: relative;
+  top: 175px;
   border: 170px solid transparent;
   border-bottom: 0px solid transparent;
   border-right: 0px solid transparent;
-  border-left: 1903px solid white;
+  border-left: 1920px solid white;
 }
 
 .fifthBlockRightDown > p:nth-child(1) {
