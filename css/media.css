@@ -266,7 +266,7 @@ margin-top: 47px;
 
 @media (max-width: 840px) {
   .fourthBlock {
-    -webkit-transform: scale(0.6) translate(-54%, -89% );
+    -webkit-transform: scale(0.5) translate(-54%, -89% );
     -moz-transform: scale(0.5) translate(-54%, 89% );
     height: 560px;
   }
@@ -302,8 +302,13 @@ top: 75px;
     display: block;
   }
   .fourthBlock {
+    -webkit-transform: scale(0.5) translate(-54%, -408% );
+    -moz-transform: scale(0.5) translate(-54%, 89% );
     top: 10px;
     margin-top: 800px;
+  }
+  .fourthBlockOurs {
+    width: 500px;
   }
   .firstBlockMain > h1:nth-child(1) {
     font-size: 35px;
@@ -516,7 +521,7 @@ text-align: center;
 }
 @media (max-width: 380px) {
   .trekutnik {
-    top: 141px;
+    top: 143px;
   }
 }
 /*
