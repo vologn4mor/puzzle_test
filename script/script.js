@@ -65,13 +65,12 @@ function randomRotateAndOpacity() {
   document.getElementById('firstLineCircle').style.top =  document.getElementById('firstLineCircle').style.left = -(coords - 1) + "px";
   document.getElementById('secodLineCircle').style.border = document.getElementById('firstLineCircle').style.border = coords + "px solid #3335CF";
 
-   document.getElementById('firstLineCircle').style.opacity = document.getElementById('secodLineCircle').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
+   document.getElementById('firstLineCircle').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
+   document.getElementById('secodLineCircle').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
 
   setTimeout(randomRotateAndOpacity, 2500);
 }
 
-document.getElementsByClassName('trekutnik')[0].style.width = document.documentElement.clientWidth;
-console.log(document.getElementsByClassName('trekutnik')[0]);
 // menuFirst.onclick = function () {
 //   window.scrollTo(0, 977);
 // }
@@ -105,6 +104,10 @@ setTimeout(function(){
     preloader.marginLeft = '63px';
     console.log(2)
   }
+  if (width < 457) {
+    preloader.marginLeft = '33px';
+    console.log(2)
+  }
 
   preloader.marginTop = '26px';
   preloader.top = '0';
@@ -118,10 +121,3 @@ setTimeout(function(){
 setTimeout(function(){
   document.getElementById('preloader').style.display = 'none';
 }, 3000);
-
-
-
-// document.getElementsByClassName('trekutnik')[0].style.borderLeft = document.documentElement.clientWidth + "px solid white";
-
-
-// border-left: 1903px solid white;

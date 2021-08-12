@@ -6,7 +6,7 @@
   }
   .fifthBlockRightDown {
     right: 1px;
-    top: -0.5px;
+    top: 0px;
   }
   .containerSticky {
     height: 3890px;
@@ -25,6 +25,9 @@
   }
   .fifthBlockRight, .fifthBlockLeft {
     margin-top: 300px;
+  }
+  .fifthBlockRightDown {
+    top: -1px;
   }
 }
 
@@ -56,6 +59,9 @@
   }
   .fifthBlockRight, .fifthBlockLeft {
     margin-top: 200px;
+  }
+  .fifthBlockRightDown {
+    top: 0px;
   }
 }
 
@@ -131,6 +137,9 @@
   }
   .fifthBlockRight, .fifthBlockLeft {
     margin-top: 100px;
+  }
+  .fifthBlockRightDown {
+    top: -1px;
   }
 }
 
@@ -250,7 +259,9 @@ display: none;
 position: relative;
 left: -70%;
 }
-
+.thirdBlockRight {
+margin-top: 47px;
+}
 }
 
 @media (max-width: 840px) {
@@ -268,15 +279,106 @@ left: -70%;
     position: relative;
     left: 80%;
   }
+
+  .fourthBlockMainFourth > a:nth-child(3) {
+    right: 201px;
+    top: 85px;
+  }
+}
+
+
+
+@media (max-width: 830px) {
+.trekutnik {
+top: 75px;
+}
 }
 
 @media (max-width: 758px) {
-.firstBlockMain > h1:nth-child(1) {
-  font-size: 35px;
-  line-height: 45px;
-  margin-bottom: 20px;
-  text-align: center;
+  .trekutnik {
+    top: 28px;
+  }
+  .fourthBlockMain {
+    display: block;
+  }
+  .fourthBlock {
+    top: 10px;
+    margin-top: 800px;
+  }
+  .firstBlockMain > h1:nth-child(1) {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .trekutnik {
+    top: 175px;
+  }
+  .fourthBlockMainFourth > a:nth-child(3) {
+  right: 0px;
+  }
+  /* .fourthBlockMain div {
+    margin: 0 auto;
+  } */
+  /* .thirdBlock {
+    height: 1370px;
+  } */
 }
+
+@media (max-width: 710px) {
+
+  .trekutnik {
+    top: 34px;
+  }
+
+  /* style.css | file:///G:/NextCloud/Projects/WORK/Puzzle(copy/css/style.css */
+
+  .thirdBlockList li {
+    /* margin-bottom: 30px; */
+    margin-bottom: 15px;
+  }
+
+  .thirdBlockList div {
+    width: 420px;
+    height: 236px;
+    margin: 0 auto;
+    width: auto;
+  }
+
+  /* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle(copy/index.html */
+
+  .thirdBlockDevelopment > h2:nth-child(1) {
+    margin-top: 0px;
+  }
+
+  /* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle(copy/index.html */
+
+  .thirdBlockDigital > h2:nth-child(1) {
+    margin-top: 0px;
+  }
+
+  /* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle(copy/index.html */
+
+  .thirdBlockRight {
+    /* text-align: -moz-right; */
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  /* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle(copy/index.html */
+
+  .thirdBlockRightMain {
+    margin: 0 auto;
+  }
+
+  /* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle(copy/index.html */
+
+  .thirdBlockRight > h2:nth-child(1) {
+    /* margin-top: 0px; */
+    margin-bottom: 0px;
+  }
+
+
 
 .firstBlockMain > p:nth-child(3) {
   text-align: center;
@@ -308,16 +410,124 @@ left: -70%;
   text-align: center;
 }
 
+.thirdBlockRight {
+  padding: 0;
 }
 
-@media (max-width: 830px) {
-.trekutnik {
-top: 75px;
+.thirdBlockList ul {
+  padding-left: 0px;
+}
+
+.thirdBlockList div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+}
+.thirdBlockList h2 {
+  margin-bottom: 8px;
 }
 }
 
-@media (max-width: 758px) {
-.trekutnik {
-top: 28px;
+@media (max-width: 456px) {
+  .firstBlockMainCenter {
+      margin-left: 0px;
+  }
+  .firstBlockMainCenter, .firstBlockMainCenter div {
+display: flex;
+margin-left: 5px;
+}
+.firstBlockMainCenter > div > p {
+width: auto;
+}
+
+.firstBlockMainCenter > div {
+text-align: center;
+}
+
+.firstBlockRightPhone {
+  display: none;
+}
+
+  .logo {
+    /* margin-left: 63px; */
+    margin-left: 33px;
+  }
+
+  .trekutnik {
+    /* top: 28px; */
+    top: 145px;
+  }
+
+  .firstBlockMain {
+    margin-top: 40px;
+  }
+  .firstBlockMainCenter, .firstBlockMainCenter div {
+
 }
 }
+@media (max-width: 406px) {
+  .firstBlockMainCenter {
+    font-size: 15px;
+  }
+
+  .trekutnik {
+    top: 218px;
+  }
+  .secondBlockRight > h2:nth-child(1) {
+    text-align: center;
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  .trekutnik {
+    border: 105px solid transparent;
+    border-left: 900px solid white;
+    border-bottom: 0px solid transparent;
+  }
+    .secondBlockRight {
+    margin-left: 0px;
+    text-align: center;
+  }
+  .secondBlockRight > div {
+    display: block;
+  }
+  .thirdBlockRight > h2:nth-child(1) {
+    font-size: 30px;
+  }
+  .thirdBlockRight {
+    margin: 178px auto;
+    margin: 108px auto;
+  }
+}
+
+@media (max-width: 405px) {
+  .trekutnik {
+    top: 174px;
+  }
+  .fifthBlockMain {
+  transform: scale(0.5);
+  }
+  .fifthBlock {
+    height: 650px;
+  }
+  .fifthBlockMain {
+    margin-top: 491px;
+  }
+}
+@media (max-width: 380px) {
+  .trekutnik {
+    top: 141px;
+  }
+}
+/*
+@media (max-width: 354px) {
+  .trekutnik {
+    top: 110px;
+  }
+}
+
+@media (max-width: 354px) {
+  .trekutnik {
+    top: 90px;
+  }
+} */
