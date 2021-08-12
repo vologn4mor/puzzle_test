@@ -12,9 +12,9 @@ li {
   list-style-type: none;
 }
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 html {
   scroll-behavior: smooth;
