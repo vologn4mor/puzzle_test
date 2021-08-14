@@ -1,6 +1,7 @@
 * {
   font-family: 'Gotham Pro';
   font-weight: 300;
+  /* overflow-y: hidden; */
 }
 
 a {
@@ -12,23 +13,34 @@ li {
   list-style-type: none;
 }
 
-/* body {
-  overflow-x: hidden;
-} */
+body {
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
+}
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-y: visible;
+  overflow-x: scroll; */
 }
 
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  /* overflow-x: hidden; */
 }
 
 .firstBlock {
   background-image: url(../img/firstBlockNew.png);
   height: 1002px;
+  overflow: hidden;
+}
+
+.thirdBlockLines {
+overflow: hidden;
+}
+.fifthBlock {
+overflow-x: hidden;
 }
 
 .firstBlockLeft {
