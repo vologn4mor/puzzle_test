@@ -71,6 +71,14 @@ function randomRotateAndOpacity() {
   setTimeout(randomRotateAndOpacity, 2500);
 }
 
+toUpButtonBottom.onclick = function () {
+  window.scrollTo(0, 0)
+}
+
+toUpButton.onclick = function () {
+  window.scrollTo(0, 0)
+}
+
 // menuFirst.onclick = function () {
 //   window.scrollTo(0, 977);
 // }

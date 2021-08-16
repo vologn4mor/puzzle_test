@@ -37,6 +37,9 @@
     -moz-transform: scale(0.8) translate(-7%, 20% );
     height: 1150px;
   }
+  .circleContainer {
+    transform: scale(0.6);
+  }
 }
 
 @media (max-width: 1485px) {
@@ -144,6 +147,17 @@
 }
 
 @media (max-width: 1036px) {
+  .containerSticky{
+    height: 3500px;
+  }
+  #secondBlockMenu {
+    rotate: 90deg;
+    float: right;
+  /* padding-right: 200px; */
+  }
+  .thirdBlockQuestion {
+    display: block;
+  }
 
 .fifthBlockRightUp > h2:nth-child(1) {
   line-height: 60px;
@@ -251,8 +265,15 @@ max-width: 855px;
 font-size: 60px;
 }
 
-.secondBlockLeftMenu {
+.circleContainer {
 display: none;
+}
+.toUpButton {
+  display: block;
+  background-color: #181ACF;
+  padding: 12px 30px;
+  width: 65px;
+  color: white;
 }
 
 .fifthBlockLeftSocial > p:nth-child(3) {
@@ -262,13 +283,24 @@ left: -70%;
 .thirdBlockRight {
 margin-top: 47px;
 }
+
+.thirdBlockQuestion {
+position: relative;
+top: 200px;
+left: 35%;
+}
+
+#circle {
+margin-left: 0px;
+}
+
 }
 
 @media (max-width: 840px) {
   .fourthBlock {
     -webkit-transform: scale(0.5) translate(-54%, -89% );
     -moz-transform: scale(0.5) translate(-54%, 89% );
-    height: 560px;
+    height: 620px;
   }
 
   .fourthBlockMainSecond {
@@ -295,6 +327,9 @@ top: 75px;
 }
 
 @media (max-width: 758px) {
+  .containerSticky{
+    height: 4500px;
+  }
   .trekutnik {
     top: 28px;
   }
@@ -331,6 +366,54 @@ top: 75px;
 }
 
 @media (max-width: 710px) {
+  #toUpButton {
+    display: none;
+  }
+  #toUpButtonBottom {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: -41px;
+    margin-top: 754px;
+    rotate: 90deg;
+    float: right;
+  }
+  .thirdBlockList .thirdBlockDigital {
+    height: 186px;
+  }
+  .thirdBlockListName {
+    font-size: 20px;
+  }
+  .thirdBlockList div {
+    margin-top: 12px;
+  }
+  .thirdBlockQuestion {
+    top: -85px;
+  }
+  .thirdBlockRight {
+    margin-top: 53px;
+  }
+  #circle {
+    position: inherit;
+    margin: 0 auto;
+    /* left: 28%; */
+    /* margin: 40px -12%; */
+  }
+
+  .thirdBlockRight > h2:nth-child(1) {
+    font-size: 30px;
+  }
+  .firstBlockMainCenter {
+      margin-left: 0px;
+  }
+  .thirdBlockList {
+    flex-direction: column;
+  }
+
+  .thirdBlockQuestion {
+    top: 200px;
+    top: 348px;
+  }
 
   .trekutnik {
     top: 34px;
@@ -426,7 +509,7 @@ top: 75px;
 .thirdBlockList div {
   display: flex;
   flex-direction: column;
-  margin-top: 22px;
+  margin-top: 12px;
 }
 .thirdBlockList h2 {
   margin-bottom: 8px;
@@ -434,9 +517,7 @@ top: 75px;
 }
 
 @media (max-width: 456px) {
-  .firstBlockMainCenter {
-      margin-left: 0px;
-  }
+
   .firstBlockMainCenter, .firstBlockMainCenter div {
 display: flex;
 margin-left: 5px;
@@ -466,9 +547,7 @@ text-align: center;
   .firstBlockMain {
     margin-top: 40px;
   }
-  .firstBlockMainCenter, .firstBlockMainCenter div {
 
-}
 }
 @media (max-width: 406px) {
   .firstBlockMainCenter {
@@ -496,16 +575,16 @@ text-align: center;
   .secondBlockRight > div {
     display: block;
   }
-  .thirdBlockRight > h2:nth-child(1) {
-    font-size: 30px;
-  }
+
   .thirdBlockRight {
-    margin: 178px auto;
-    margin: 108px auto;
+    margin: 58px auto;
   }
 }
 
 @media (max-width: 405px) {
+  #toUpButtonBottom {
+margin-top: 566px;
+}
   .trekutnik {
     top: 174px;
   }

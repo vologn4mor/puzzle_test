@@ -340,6 +340,10 @@ span.blue {
   justify-content: space-between;
 }
 
+.thirdBlockQuestion {
+  display: none;
+}
+
 .thirdBlockList div{
   width: 325px;
   height: 320px;
@@ -622,7 +626,7 @@ top: -1px;
 }
 
 .trekutnik {
-  height: 10px;
+  height: 36px;
   /* position: relative;
   top: 155.6px; */
   position: absolute;
@@ -725,11 +729,21 @@ display: none;
 
 
 .trekutnik {
-  height: 11px;
+  height: 36px;
   position: relative;
   top: 175px;
   border: 170px solid transparent;
   border-bottom: 0px solid transparent;
   border-right: 0px solid transparent;
   border-left: 1920px solid white;
+}
+
+.toUpButton {
+  display: none;
+  cursor: pointer;
+}
+
+#toUpButtonBottom {
+  display: none;
+  cursor: pointer;
 }
