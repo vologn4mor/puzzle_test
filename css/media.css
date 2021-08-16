@@ -151,7 +151,7 @@
     height: 3500px;
   }
   #secondBlockMenu {
-    rotate: 90deg;
+    transform: rotate(90deg);
     float: right;
   /* padding-right: 200px; */
   }
@@ -337,7 +337,7 @@ top: 75px;
     display: block;
   }
   .fourthBlock {
-    -webkit-transform: scale(0.5) translate(-54%, -408% );
+    -webkit-transform: scale(0.5) translate(-54%, -347% );
     -moz-transform: scale(0.5) translate(-54%, 89% );
     top: 10px;
     margin-top: 800px;
@@ -375,8 +375,9 @@ top: 75px;
     right: 0;
     margin-right: -41px;
     margin-top: 754px;
-    rotate: 90deg;
+    transform: rotate(90deg);
     float: right;
+    z-index: 1;
   }
   .thirdBlockList .thirdBlockDigital {
     height: 186px;
