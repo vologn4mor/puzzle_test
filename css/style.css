@@ -19,7 +19,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   /* overflow-y: visible;
   overflow-x: scroll; */
 }
@@ -70,6 +70,10 @@ overflow-x: hidden;
 .firstBlockRightPhone {
   padding-left: 80px;
   width: 186px;
+}
+
+.firstBlockRightPhone a {
+  font-weight: bold;
 }
 
 .firstBlockMainCenter, .firstBlockMainCenter div {
@@ -419,21 +423,28 @@ span.blue {
 .fourthBlockMainSecond, .fourthBlockMainFourth {
   margin-top: 70px;
 }
-.fourthBlockMainFourth > a:nth-child(3) {
+.checkAllCases {
   display: flex;
   color: black;
   position: relative;
-  right: 680px;
-  top: 8px;
+  top: -130px;
 }
 
-.fourthBlockMainFourth > a:nth-child(3) > p:nth-child(1) {
+.checkAllCases p {
   font-size: 22px;
   font-weight: 400;
 }
 
-.fourthBlockMainFourth > a:nth-child(3) > img:nth-child(2) {
+.checkAllCases img {
   margin-left: 15px;
+}
+
+/* .fourthBlockMainFourth .fourthBlockMainFirstDiv{
+  margin-bottom: 41px;
+} */
+.fourthBlockMainFirstDiv{
+  max-width: 488px;
+  margin: 50px auto;
 }
 
 .fourthBlockOurs {
@@ -449,9 +460,9 @@ span.blue {
   padding-left: 50px;
 }
 
-.fourthBlockMainFirst > div:nth-child(2) {
+.fourthBlockMainFirst div {
   max-width: 488px;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .fourthBlockMainSecond > div:nth-child(2) {
@@ -746,4 +757,32 @@ display: none;
 #toUpButtonBottom {
   display: none;
   cursor: pointer;
+}
+
+.fourthBlockMainDiv, .fourthBlockMainFirstImg {
+  transition: 0.5s;
+}
+
+.fourthBlockMainFirstDiv {
+  display: none;
+}
+
+.h2FourthBlock {
+  font-size: 30px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+.pFourthBlock {
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  width: 469px;
+  margin-bottom: 57px;
+}
+
+.aFourthBlock {
+  padding: 21px 69px;
+  background-color: #181ACF;
+  border-radius: 10px;
 }

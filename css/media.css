@@ -302,7 +302,9 @@ margin-left: 0px;
     -moz-transform: scale(0.5) translate(-54%, 89% );
     height: 620px;
   }
-
+  .checkAllCases {
+    top: -75px;
+  }
   .fourthBlockMainSecond {
     margin-top: 0px;
   }
@@ -374,7 +376,7 @@ top: 75px;
     position: absolute;
     right: 0;
     margin-right: -41px;
-    margin-top: 754px;
+    margin-top: 753px;
     transform: rotate(90deg);
     float: right;
     z-index: 1;

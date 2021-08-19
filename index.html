@@ -9,12 +9,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
-  <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet">
+  <!-- <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet"> -->
+  <script src="script/jquery.js"></script>
 </head>
 <body onload="randomRotateAndOpacity()" id='body'>
-  <div class="preloader" id='preloader'>
+  <!-- <div class="preloader" id='preloader'>
     <div class="preloaderLogo" id='preloaderLogo'>Puzzle</div>
-  </div>
+  </div> -->
   <div class="container">
     <div class="firstBlock parallax">
       <div>
@@ -36,7 +37,7 @@
                 Рус
             </p>
             <p class="firstBlockRightPhone">
-              +38 (095) 081 37 98
+               <a href="tel:+380950813798">+38 (095) 081 37 98</a> 
             </p>
             <div class="firstBlockRightMenu">
               <img src="img/headerMenu.svg" alt="">
@@ -182,27 +183,63 @@
     <h2 class="fourthBlockOurs">Наши проекты</h2>
     <div class="fourthBlockMain">
       <div>
-      <div class="fourthBlockMainFirst">
+      <div class="fourthBlockMainFirst classHover" id="fourthBlockMainFirst">
         <p class="fourthBlockMainText">/Личный бренд</p>
-        <div><img src="img/fourthBlock12.png" alt=""></div>
+        <div class="fourthBlockMainFirstImg" id="fourthBlockMainFirstImg">
+          <img src="img/fourthBlock12.png" alt="">
+        </div>
+        <div class="fourthBlockMainFirstDiv">
+          <h2 class="h2FourthBlock">Dmytry Taran</h2>
+          <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
+А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
+        <a href="#" class="aFourthBlock">Смотреть кейс</a>
+        </div>
       </div>
-      <div class="fourthBlockMainThird">
+      <div class="fourthBlockMainThird classHover" id="fourthBlockMainThird">
         <p class="fourthBlockMainText">/Мобильные версии</p>
-        <div><img src="img/fourthBlock32.png" alt=""></div>
+        <div class="fourthBlockMainFirstImg">
+          <img src="img/fourthBlock32.png" alt="">
+        </div>
+        <div class="fourthBlockMainFirstDiv">
+          <h2 class="h2FourthBlock">Dmytry Taran</h2>
+          <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
+А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
+        <a href="#" class="aFourthBlock">Смотреть кейс</a>
+        </div>
       </div>
       </div>
       <div>
-        <div class="fourthBlockMainSecond">
+        <div class="fourthBlockMainSecond classHover" id="fourthBlockMainSecond">
           <p class="fourthBlockMainText">/Визитки</p>
-          <div><img src="img/fourthBlock22.png" alt=""></div>
+          <div class="fourthBlockMainFirstImg">
+            <img src="img/fourthBlock22.png" alt="">
+          </div>
+          <div class="fourthBlockMainFirstDiv">
+            <h2 class="h2FourthBlock">Dmytry Taran</h2>
+            <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+  Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
+  А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
+          <a href="#" class="aFourthBlock">Смотреть кейс</a>
         </div>
-      <div class="fourthBlockMainFourth">
+        </div>
+      <div class="fourthBlockMainFourth classHover" id="fourthBlockMainFourth">
         <p class="fourthBlockMainText">/Лендинг</p>
-        <div><img src="img/fourthBlock42.png" alt=""></div>
-        <a href="#"><p>Смотреть все кейсы</p><img src="img/fourthBlockArrow1.svg" alt=""></a>
+        <div class="fourthBlockMainFirstImg">
+          <img src="img/fourthBlock42.png" alt="">
+        </div>
+        <div class="fourthBlockMainFirstDiv">
+          <h2 class="h2FourthBlock">Dmytry Taran</h2>
+          <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
+А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
+        <a href="#" class="aFourthBlock">Смотреть кейс</a>
       </div>
       </div>
     </div>
+  </div>
+  <a href="#" class="checkAllCases"><p>Смотреть все кейсы</p><img src="img/fourthBlockArrow1.svg" alt=""></a>
   </div>
   <div class="fifthBlock">
   <div class="toUpButton" id='toUpButtonBottom'>На верх</div>
@@ -236,7 +273,7 @@
             <div class="tiktok">
               <a href="#">
                 <img src="img/tiktok.svg" alt="">
-                <p>TikTok</p>
+                <p>Telegram</p>
               </a>
             </div>
             <div class="facebook">
