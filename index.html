@@ -9,19 +9,19 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
-  <!-- <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet"> -->
-  <script src="script/jquery.js"></script>
+  <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet">
 </head>
-<body onload="randomRotateAndOpacity()" id='body'>
+<body onscroll="scrolled()" onload="randomRotateAndOpacity()" id='body'>
   <!-- <div class="preloader" id='preloader'>
     <div class="preloaderLogo" id='preloaderLogo'>Puzzle</div>
   </div> -->
   <div class="container">
     <div class="firstBlock parallax">
-      <div>
       <div class="firstBlockTop">
         <div class="firstBlockLeft">
           <p class="logo">Puzzle</p>
+
+
           <div class="firstBlockButtons">
             <a href="#">Услуги</a>
             <a href="#">Портфолио</a>
@@ -37,13 +37,12 @@
                 Рус
             </p>
             <p class="firstBlockRightPhone">
-               <a href="tel:+380950813798">+38 (095) 081 37 98</a>
+              +38 (095) 081 37 98
             </p>
             <div class="firstBlockRightMenu">
               <img src="img/headerMenu.svg" alt="">
             </div>
         </div>
-      </div>
       </div>
       <div class="firstBlockMain">
         <h1>Собери свой бизнес вместе с Puzzle Group</h1>
@@ -72,18 +71,10 @@
     <div class="containerSticky">
       <div class="secondBlockLeft">
         <div class="secondBlockLeftMenu" id="secondBlockMenu">
-          <div class="toUpButton" id='toUpButton'>
-            На верх
-          </div>
-          <div class="circleContainer">
-            <div id="firstLineCircle"></div>
-              <div id="secodLineCircle"></div>
-                <div id="circle">
-                  <p id="circleQuestion">ПОЯВИЛСЯ ВОПРОС?</p>
-                </div>
-
-
-          </div>
+          <p class="boldMenu" id="menuFirst">Что мы делаем?</p>
+          <p class="boldMenu" id="menuSecond">Наши услуги</p>
+          <p class="boldMenu" id="menuThird">Портфолио</p>
+          <p class="boldMenu" id="menuFourth">Оформить заявку</p>
         </div>
       </div>
     <div class="secondBlock">
@@ -174,77 +165,36 @@
         <img src="img/thirdBlockPhoto.png" alt="">
       </div>
       </div>
-      <div id="circle" class="thirdBlockQuestion">
-        <p id="circleQuestion">ПОЯВИЛСЯ ВОПРОС?</p>
-      </div>
     </div>
   </div>
   <div class="fourthBlock">
     <h2 class="fourthBlockOurs">Наши проекты</h2>
     <div class="fourthBlockMain">
       <div>
-      <div class="fourthBlockMainFirst classHover" id="fourthBlockMainFirst">
+      <div class="fourthBlockMainFirst">
         <p class="fourthBlockMainText">/Личный бренд</p>
-        <div class="fourthBlockMainFirstImg" id="fourthBlockMainFirstImg">
-          <img src="img/fourthBlock12.png" alt="">
-        </div>
-        <div class="fourthBlockMainFirstDiv">
-          <h2 class="h2FourthBlock">Dmytry Taran</h2>
-          <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
-Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
-А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
-        <a href="#" class="aFourthBlock">Смотреть кейс</a>
-        </div>
+        <div><img src="img/fourthBlock12.png" alt=""></div>
       </div>
-      <div class="fourthBlockMainThird classHover" id="fourthBlockMainThird">
+      <div class="fourthBlockMainThird">
         <p class="fourthBlockMainText">/Мобильные версии</p>
-        <div class="fourthBlockMainFirstImg">
-          <img src="img/fourthBlock32.png" alt="">
-        </div>
-        <div class="fourthBlockMainFirstDiv">
-          <h2 class="h2FourthBlock">Dmytry Taran</h2>
-          <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
-Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
-А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
-        <a href="#" class="aFourthBlock">Смотреть кейс</a>
-        </div>
+        <div><img src="img/fourthBlock32.png" alt=""></div>
+        <a href="#"><p>Смотреть все кейсы</p><img src="img/fourthBlockArrow1.svg" alt=""></a>
       </div>
       </div>
       <div>
-        <div class="fourthBlockMainSecond classHover" id="fourthBlockMainSecond">
+        <div class="fourthBlockMainSecond">
           <p class="fourthBlockMainText">/Визитки</p>
-          <div class="fourthBlockMainFirstImg">
-            <img src="img/fourthBlock22.png" alt="">
-          </div>
-          <div class="fourthBlockMainFirstDiv">
-            <h2 class="h2FourthBlock">Dmytry Taran</h2>
-            <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
-  Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
-  А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
-          <a href="#" class="aFourthBlock">Смотреть кейс</a>
+          <div><img src="img/fourthBlock22.png" alt=""></div>
         </div>
-        </div>
-      <div class="fourthBlockMainFourth classHover" id="fourthBlockMainFourth">
+      <div class="fourthBlockMainFourth">
         <p class="fourthBlockMainText">/Лендинг</p>
-        <div class="fourthBlockMainFirstImg">
-          <img src="img/fourthBlock42.png" alt="">
-        </div>
-        <div class="fourthBlockMainFirstDiv">
-          <h2 class="h2FourthBlock">Dmytry Taran</h2>
-          <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
-Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
-А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
-        <a href="#" class="aFourthBlock">Смотреть кейс</a>
+        <div><img src="img/fourthBlock42.png" alt=""></div>
       </div>
       </div>
     </div>
   </div>
-  <a href="#" class="checkAllCases"><p>Смотреть все кейсы</p><img src="img/fourthBlockArrow1.svg" alt=""></a>
-  </div>
   <div class="fifthBlock">
-  <div class="toUpButton" id='toUpButtonBottom'>На верх</div>
     <div class="fifthBlockMain">
-
     <div class="fifthBlockLeft">
       <div class="fifthBlockLeftUp">
         <img src="img/fifthBlockCompany.png" alt="">
@@ -254,8 +204,7 @@
           <h2>Контакты</h2>
           <div class="vodafone">
             <img src="img/vodafone.svg" alt="">
-            <!-- <p>+38 (095) 081 37 98</p> -->
-            <a href="tel:+380950813798">+38 (095) 081 37 98</a>
+            <p>+38 (095) 081 37 98</p>
           </div>
           <div class="email">
             <img src="img/gmail.svg" alt="">
@@ -274,7 +223,7 @@
             <div class="tiktok">
               <a href="#">
                 <img src="img/tiktok.svg" alt="">
-                <p>Telegram</p>
+                <p>TikTok</p>
               </a>
             </div>
             <div class="facebook">
@@ -290,9 +239,7 @@
               </a>
             </div>
           </div>
-
           <p>© Puzzle group 2021</p>
-
         </div>
       </div>
     </div>
