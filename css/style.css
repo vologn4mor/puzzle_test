@@ -1,6 +1,7 @@
 * {
   font-family: 'Gotham Pro';
   font-weight: 300;
+  /* overflow-y: hidden; */
 }
 
 a {
@@ -13,21 +14,33 @@ li {
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+  /* overflow-y: visible;
+  overflow-x: scroll; */
 }
 
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  /* overflow-x: hidden; */
 }
 
 .firstBlock {
   background-image: url(../img/firstBlockNew.png);
   height: 1002px;
+  overflow: hidden;
+}
+
+.thirdBlockLines {
+overflow: hidden;
+}
+.fifthBlock {
+overflow-x: hidden;
 }
 
 .firstBlockLeft {
@@ -59,6 +72,10 @@ html {
   width: 186px;
 }
 
+.firstBlockRightPhone a {
+  font-weight: bold;
+}
+
 .firstBlockMainCenter, .firstBlockMainCenter div {
 display: flex;
 flex-wrap: wrap;
@@ -88,7 +105,7 @@ flex-wrap: wrap;
   color: white;
   font-weight: bold;
   font-size: 28px;
-  margin-left: 203px;
+  margin-left: 100px;
   margin-top: 26px;
 }
 
@@ -134,7 +151,7 @@ line-height: 17px;
 
 .firstBlockMain {
   max-width: 1166px;
-  margin-left: 200px;
+  margin-left: 100px;
   margin-top: 157px;
   color: white;
 }
@@ -157,7 +174,7 @@ line-height: 17px;
 }
 
 .firstBlockMainButtons > a:nth-child(1) {
- background-color: #5455C8;
+ background-color: #181ACF;
  margin-right: 30px;
 }
 
@@ -263,8 +280,7 @@ span.blue {
 }
 
 .containerSticky {
-  /* height: 4550px; */
-  height: 4432px;
+  height: 4343px;
 }
 
 .thirdBlock {
@@ -326,6 +342,10 @@ span.blue {
   flex-wrap: wrap;
   max-width: 900px;
   justify-content: space-between;
+}
+
+.thirdBlockQuestion {
+  display: none;
 }
 
 .thirdBlockList div{
@@ -403,18 +423,28 @@ span.blue {
 .fourthBlockMainSecond, .fourthBlockMainFourth {
   margin-top: 70px;
 }
-.fourthBlockMainThird > a:nth-child(3) {
+.checkAllCases {
   display: flex;
   color: black;
+  position: relative;
+  top: -130px;
 }
 
-.fourthBlockMainThird > a:nth-child(3) > p:nth-child(1) {
+.checkAllCases p {
   font-size: 22px;
   font-weight: 400;
 }
 
-.fourthBlockMainThird > a:nth-child(3) > img:nth-child(2) {
+.checkAllCases img {
   margin-left: 15px;
+}
+
+/* .fourthBlockMainFourth .fourthBlockMainFirstDiv{
+  margin-bottom: 41px;
+} */
+.fourthBlockMainFirstDiv{
+  max-width: 488px;
+  margin: 50px auto;
 }
 
 .fourthBlockOurs {
@@ -430,9 +460,9 @@ span.blue {
   padding-left: 50px;
 }
 
-.fourthBlockMainFirst > div:nth-child(2) {
+.fourthBlockMainFirst div {
   max-width: 488px;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .fourthBlockMainSecond > div:nth-child(2) {
@@ -561,6 +591,7 @@ input[type=phone] {
   border: 0px solid white;
   outline: none;
   color: white;
+  margin: 1px 0;
 }
 
 input[type=phone]:focus {
@@ -574,6 +605,7 @@ input[type=phone]:focus {
 background-color: #3335CF;
 position: relative;
 right: 1px;
+top: -1px;
 }
 
 .fifthBlockRightDown {
@@ -605,7 +637,7 @@ right: 1px;
 }
 
 .trekutnik {
-  height: 10px;
+  height: 36px;
   /* position: relative;
   top: 155.6px; */
   position: absolute;
@@ -657,4 +689,103 @@ display: none;
   }
 .loaded .preloader {
   display: none;
+}
+
+#circle {
+  background-color: #3335CF;
+  color: white;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+#circleQuestion {
+  padding-top: 85px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#secodLineCircle {
+  width: 258px;
+  height: 258px;
+  border: 1px solid #3335CF;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#firstLineCircle {
+  width: 298px;
+  width: 298px;
+  height: 298px;
+  border: 1px solid #3335CF;
+  border-radius: 50%;
+}
+
+#secondBlockMenu *{
+  position: absolute;
+/* transition: 1.2s; */
+}
+
+#firstLineCircle, #secodLineCircle {
+  transition-property: opacity;
+  transition-duration: 0.6s;
+}
+
+
+.trekutnik {
+  height: 36px;
+  position: relative;
+  top: 175px;
+  border: 170px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-left: 1920px solid white;
+}
+
+.toUpButton {
+  display: none;
+  cursor: pointer;
+}
+
+#toUpButtonBottom {
+  display: none;
+  cursor: pointer;
+}
+
+.fourthBlockMainDiv, .fourthBlockMainFirstImg {
+  transition: 0.5s;
+}
+
+.fourthBlockMainFirstDiv {
+  display: none;
+}
+
+.h2FourthBlock {
+  font-size: 30px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+.pFourthBlock {
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  width: 469px;
+  margin-bottom: 57px;
+}
+
+.aFourthBlock {
+  padding: 21px 69px;
+  background-color: #181ACF;
+  border-radius: 10px;
+}
+.checkAllCases {
+width: 340px;
 }
