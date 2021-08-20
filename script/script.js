@@ -13,7 +13,9 @@ $(function(){
       return false;
     });
     if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
-      // сюда вставляем скрипт
+      if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+        $('.parallax').css({'background-attachment':'inherit'})
+      }
       var winHeight = $(window).height();
       var target1 = $('#fourthBlockMainFirst');
       var targetPos1 = target1.offset().top + 175;
