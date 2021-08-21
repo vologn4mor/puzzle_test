@@ -12,10 +12,10 @@ $(function(){
       $('html').animate({scrollTop: 0}, 500);
       return false;
     });
-    if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
-      if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
-        $('.parallax').css({'background-attachment':'inherit'})
-      }
+    // if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+    //   if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+    //     $('.parallax').css({'background-attachment':'inherit'})
+    //   }
       var winHeight = $(window).height();
       var target1 = $('#fourthBlockMainFirst');
       var targetPos1 = target1.offset().top + 400;
@@ -34,47 +34,39 @@ $(function(){
       $(window).scroll(function(){
         var winScrollTop = $(this).scrollTop();
         if(winScrollTop > scrollToElem1 && winScrollTop < scrollToElem1 + 400){
-          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstImg').fadeOut('slow', function(){
-            $('#fourthBlockMainFirst').find('.fourthBlockMainFirstDiv').fadeIn();
-          });
+          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstImg').css('display', 'none');
+          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstDiv').css('display', 'block');
         }
         else {
-          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstDiv').fadeOut('slow', function(){
-            $('#fourthBlockMainFirst').find('.fourthBlockMainFirstImg').fadeIn();
-          });
+          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstImg').css('display', 'block');
+          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstDiv').css('display', 'none');
         }
         if(winScrollTop > scrollToElem2 && winScrollTop < scrollToElem2 + 400){
-          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstImg').fadeOut('slow', function(){
-            $('#fourthBlockMainSecond').find('.fourthBlockMainFirstDiv').fadeIn();
-          });
+          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstImg').css('display', 'none');
+          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstDiv').css('display', 'block');
         }
         else {
-          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstDiv').fadeOut('slow', function(){
-            $('#fourthBlockMainSecond').find('.fourthBlockMainFirstImg').fadeIn();
-          });
+          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstImg').css('display', 'block');
+          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstDiv').css('display', 'none');
         }
         if(winScrollTop > scrollToElem3 && winScrollTop < scrollToElem3 + 400){
-          $('#fourthBlockMainThird').find('.fourthBlockMainFirstImg').fadeOut('slow', function(){
-            $('#fourthBlockMainThird').find('.fourthBlockMainFirstDiv').fadeIn();
-          });
+          $('#fourthBlockMainThird').find('.fourthBlockMainFirstImg').css('display', 'none');
+          $('#fourthBlockMainThird').find('.fourthBlockMainFirstDiv').css('display', 'block');
         }
         else {
-          $('#fourthBlockMainThird').find('.fourthBlockMainFirstDiv').fadeOut('slow', function(){
-            $('#fourthBlockMainThird').find('.fourthBlockMainFirstImg').fadeIn();
-          });
+          $('#fourthBlockMainThird').find('.fourthBlockMainFirstImg').css('display', 'block');
+          $('#fourthBlockMainThird').find('.fourthBlockMainFirstDiv').css('display', 'none');
         }
         if(winScrollTop > scrollToElem4 && winScrollTop < scrollToElem4 + 400){
-          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstImg').fadeOut('slow', function(){
-            $('#fourthBlockMainFourth').find('.fourthBlockMainFirstDiv').fadeIn();
-          });
+          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstImg').css('display', 'none');
+          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstDiv').css('display', 'block');
         }
         else {
-          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstDiv').fadeOut('slow', function(){
-            $('#fourthBlockMainFourth').find('.fourthBlockMainFirstImg').fadeIn();
-          });
+          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstImg').css('display', 'block');
+          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstDiv').css('display', 'none');
         }
   });
-    }
+    // }
 
 })
 
