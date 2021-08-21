@@ -18,52 +18,60 @@ $(function(){
       }
       var winHeight = $(window).height();
       var target1 = $('#fourthBlockMainFirst');
-      var targetPos1 = target1.offset().top + 175;
+      var targetPos1 = target1.offset().top + 400;
       var scrollToElem1 = targetPos1 - winHeight;
       var target2 = $('#fourthBlockMainSecond');
-      var targetPos2 = target2.offset().top + 175;
+      var targetPos2 = target2.offset().top + 400;
       var scrollToElem2 = targetPos2 - winHeight;
       var target3 = $('#fourthBlockMainThird');
-      var targetPos3 = target3.offset().top + 175;
+      var targetPos3 = target3.offset().top + 400;
       var scrollToElem3 = targetPos3 - winHeight;
       var target4 = $('#fourthBlockMainFourth');
-      var targetPos4 = target4.offset().top + 175;
+      var targetPos4 = target4.offset().top + 400;
       var scrollToElem4 = targetPos4 - winHeight;
 
 
       $(window).scroll(function(){
         var winScrollTop = $(this).scrollTop();
-        if(winScrollTop > scrollToElem1 && winScrollTop < scrollToElem1 + 300){
-          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstImg').css('display', 'none');
-          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstDiv').css('display', 'block');
+        if(winScrollTop > scrollToElem1 && winScrollTop < scrollToElem1 + 400){
+          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstImg').fadeOut('slow', function(){
+            $('#fourthBlockMainFirst').find('.fourthBlockMainFirstDiv').fadeIn();
+          });
         }
         else {
-          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstImg').css('display', 'block');
-          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstDiv').css('display', 'none');
+          $('#fourthBlockMainFirst').find('.fourthBlockMainFirstDiv').fadeOut('slow', function(){
+            $('#fourthBlockMainFirst').find('.fourthBlockMainFirstImg').fadeIn();
+          });
         }
-        if(winScrollTop > scrollToElem2 && winScrollTop < scrollToElem2 + 300){
-          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstImg').css('display', 'none');
-          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstDiv').css('display', 'block');
-        }
-        else {
-          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstImg').css('display', 'block');
-          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstDiv').css('display', 'none');
-        }
-        if(winScrollTop > scrollToElem3 && winScrollTop < scrollToElem3 + 300){
-          $('#fourthBlockMainThird').find('.fourthBlockMainFirstImg').css('display', 'none');
-          $('#fourthBlockMainThird').find('.fourthBlockMainFirstDiv').css('display', 'block');
+        if(winScrollTop > scrollToElem2 && winScrollTop < scrollToElem2 + 400){
+          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstImg').fadeOut('slow', function(){
+            $('#fourthBlockMainSecond').find('.fourthBlockMainFirstDiv').fadeIn();
+          });
         }
         else {
-          $('#fourthBlockMainThird').find('.fourthBlockMainFirstImg').css('display', 'block');
-          $('#fourthBlockMainThird').find('.fourthBlockMainFirstDiv').css('display', 'none');
+          $('#fourthBlockMainSecond').find('.fourthBlockMainFirstDiv').fadeOut('slow', function(){
+            $('#fourthBlockMainSecond').find('.fourthBlockMainFirstImg').fadeIn();
+          });
         }
-        if(winScrollTop > scrollToElem4 && winScrollTop < scrollToElem4 + 300){
-          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstImg').css('display', 'none');
-          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstDiv').css('display', 'block');
+        if(winScrollTop > scrollToElem3 && winScrollTop < scrollToElem3 + 400){
+          $('#fourthBlockMainThird').find('.fourthBlockMainFirstImg').fadeOut('slow', function(){
+            $('#fourthBlockMainThird').find('.fourthBlockMainFirstDiv').fadeIn();
+          });
         }
         else {
-          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstImg').css('display', 'block');
-          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstDiv').css('display', 'none');
+          $('#fourthBlockMainThird').find('.fourthBlockMainFirstDiv').fadeOut('slow', function(){
+            $('#fourthBlockMainThird').find('.fourthBlockMainFirstImg').fadeIn();
+          });
+        }
+        if(winScrollTop > scrollToElem4 && winScrollTop < scrollToElem4 + 400){
+          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstImg').fadeOut('slow', function(){
+            $('#fourthBlockMainFourth').find('.fourthBlockMainFirstDiv').fadeIn();
+          });
+        }
+        else {
+          $('#fourthBlockMainFourth').find('.fourthBlockMainFirstDiv').fadeOut('slow', function(){
+            $('#fourthBlockMainFourth').find('.fourthBlockMainFirstImg').fadeIn();
+          });
         }
   });
     }
