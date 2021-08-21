@@ -12,10 +12,10 @@ $(function(){
       $('html').animate({scrollTop: 0}, 500);
       return false;
     });
-    // if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
-    //   if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
-    //     $('.parallax').css({'background-attachment':'inherit'})
-    //   }
+    if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+      if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+        $('.parallax').css({'background-attachment':'inherit'})
+      }
       var winHeight = $(window).height();
       var target1 = $('#fourthBlockMainFirst');
       var targetPos1 = target1.offset().top + 400;
@@ -66,7 +66,7 @@ $(function(){
           $('#fourthBlockMainFourth').find('.fourthBlockMainFirstDiv').css('display', 'none');
         }
   });
-    // }
+    }
 
 })
 
