@@ -178,12 +178,12 @@ $(function(){
 
 
 function randomRotateAndOpacity() {
-  document.getElementById('firstLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
-  document.getElementById('secondLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
-  document.getElementById('thirdLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
-  document.getElementById('firstLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
-  document.getElementById('secondLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
-  document.getElementById('thirdLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
+  // document.getElementById('firstLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
+  // document.getElementById('secondLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
+  // document.getElementById('thirdLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
+  // document.getElementById('firstLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
+  // document.getElementById('secondLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
+  // document.getElementById('thirdLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
 
   coords = (Math.floor(Math.random() * (3 - 2 + 1)) + 2);
   document.getElementById('secodLineCircle').style.top =  document.getElementById('secodLineCircle').style.left =

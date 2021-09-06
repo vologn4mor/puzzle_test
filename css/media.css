@@ -14,6 +14,9 @@
   .circleContainer {
     transform: scale(0.7);
   }
+  .secondBlockLeftMenu {
+margin-left: 50px;
+}
 }
 
 @media (max-width: 1575px) {
@@ -329,6 +332,12 @@ top: 75px;
 }
 
 @media (max-width: 758px) {
+  .checkAllCases {
+    left: 125px;
+  }
+  .thirdBlockQuestion {
+    transform: scale(0.8);
+  }
   .containerSticky{
     height: 4500px;
   }
