@@ -13,9 +13,9 @@ $(function(){
       return false;
     });
     if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
-      if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+      // if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
         $('.parallax').css({'background-attachment':'inherit'})
-      }
+      // }
       var winHeight = $(window).height();
       var target1 = $('#fourthBlockMainFirst');
       var targetPos1 = target1.offset().top + 400;
@@ -68,122 +68,148 @@ $(function(){
   });
     }
 
+      var translateToUkr = function(){
+      $('.menu').css('display', 'none');
+      console.log($('.languages').eq(1));
+      $('.languages').children().eq(1).removeClass('blueLang');
+      $('.languages').children().eq(0).addClass('blueLang');
+      $('.container').css({'-webkit-filter': 'blur(0px)', 'filter': 'blur(0px)'})
+      $('.firstBlockMain h1').css('max-width', '1000px')
+      $('.firstBlockRightRus').removeClass('selectedLang');
+      $('.firstBlockRightUkr').addClass('selectedLang');
+      $('.firstBlockButtons').children().eq(0).text('Послуги');
+      $('.firstBlockButtons').children().eq(1).text('Портфоліо');
+      $('.firstBlockButtons').children().eq(2).text('Контакти');
+      $('.firstBlockButtons').children().eq(3).text('Про нас');
+      $('.firstBlockMain').children().eq(0).text('Збери свій бізнес разом з Puzzle Group');
+      $('.firstBlockMainCenterFirst').children().eq(1).text('Послуги дизайну, створення сайтів');
+      $('.firstBlockMainCenterSecond').children().eq(1).text('Просування в соціальних мережах');
+      $('.firstBlockMainCenterThird').children().eq(1).text('Таргетована, контекстна реклама');
+      $('.firstBlockMain').children().eq(2).text('Зберемо всі пазли разом: комплексно виведемо Ваш бізнес на новий рівень');
+      $('.firstBlockMainButtons').children().eq(0).text('Послуги');
+      $('.firstBlockMainButtons').children().eq(1).text('Хочу консультацію');
+      $('#circleQuestion').text('З’ЯВИЛОСЯ ПИТАННЯ?');
+      $('.secondBlockRight').children().eq(0).html('Наша мета - <span class="blue"> підвищити якість </span> Вашого бізнесу');
+      $('.secondBlockRight01').children().eq(1).children().eq(0).text('Повний фарш!');
+      $('.secondBlockRight01').children().eq(1).children().eq(1).text('Забезпечимо комплексний підхід та індивідуальний план розвитку бізнесу. Вичавимо всі соки: разом реализуємо стратегію й відсвяткуємо результати.');
+      $('.secondBlockRight02').children().eq(1).children().eq(1).text('Креативна команда молодих спеціалистів не залишить ваш бізнес без уваги. Працюємо на результат и виконуємо работу якісно.');
+      $('.secondBlockRight03').children().eq(1).children().eq(0).text('Цінник');
+      $('.secondBlockRight03').children().eq(1).children().eq(1).text('Пропонуємо пакети послуг для будь-якої кишені. Отримаємо можливий максимум відповідно до бюджету.');
+      $('.secondBlockRight04').children().eq(1).children().eq(0).text('А можна так?');
+      $('.secondBlockRight04').children().eq(1).children().eq(1).text('Ми вас слушаємо и чуємо. Врахуємо всі побажання, проаналізуємо всі пропозиції і поєднаємо зі своїм професіоналізмом.');
+      $('.thirdBlockRight').children().eq(0).text('Мы пропонуємо');
+      $('.thirdBlockSmm li').eq(0).text('SMM-стратегія');
+      $('.thirdBlockSmm li').eq(1).text('Ведення акаунту');
+      $('.thirdBlockSmm li').eq(2).text('Таргетована реклама');
+      $('.thirdBlockSmm li').eq(3).text('Аналітика');
+      $('.thirdBlockSmm li').eq(4).text('Просування в социальних мережах');
+      $('.thirdBlockDesign li').eq(0).text('UI/UX Дизайн');
+      $('.thirdBlockDesign li').eq(1).text('Web-Дизайн');
+      $('.thirdBlockDesign li').eq(2).text('Логотип');
+      $('.thirdBlockDesign li').eq(3).text('Корпоративний дизайн');
+      $('.thirdBlockDevelopment li').eq(0).text('Інтернет-магазин');
+      $('.thirdBlockDevelopment li').eq(1).text('Корпоративні сайти');
+      $('.thirdBlockDevelopment li').eq(2).text('Landing page');
+      $('.thirdBlockDevelopment li').eq(3).text('Інтернет-портали');
+      $('.thirdBlockDevelopment li').eq(4).text('Індивидуальні рішення');
+      $('.thirdBlockDigital li').eq(0).text('E-mail маркетинг');
+      $('.thirdBlockDigital li').eq(1).text('Контекстна реклама (PPC)');
+      $('.thirdBlockDigital li').eq(2).text('Месенджери');
+      $('.thirdBlockDigital li').eq(3).text('Просування сайту (SEO)');
+      $('.thirdBlockDigital li').eq(4).text('Анализ ніші');
+      $('.fourthBlockOurs').text('Наші проекти');
+      $('.fourthBlockMainFirst .fourthBlockMainText').text('/Особистий бренд');
+      $('.fourthBlockMainSecond .fourthBlockMainText').text('/Візитки');
+      $('.fourthBlockMainThird .fourthBlockMainText').text('/Мобільні версії');
+      $('.fourthBlockMainFourth .fourthBlockMainText').text('/Лендинг');
+      $('.checkAllCases p').text('Дивитися всі кейсы');
+      $('.fifthBlockRightUp h2').html('<span class="blue">Ми краща </span>команда для втілення ваших ідей');
+      $('.fifthBlockRightUp p').text('Залиште ваш номер телефону і наш менеджер зв’яжеться з вами в протягом дня');
+      $('.fifthBlockLeftContacts h2').text('Контакти');
+      $('.fifthBlockLeftSocial h2').text('Социальні мережі');
+      $('.inputPhone').html('<input type="phone" placeholder="Номер телефону" name="user_phone">');
+      $('html').css('overflow-y','auto');
+    };
+    var translateToRus = function(){
+    $('.menu').css('display', 'none');
+    $('.languages').children().eq(0).removeClass('blueLang');
+    $('.languages').children().eq(1).addClass('blueLang');
+    $('.firstBlockMain h1').css('max-width', '1133px')
+    $('.container').css({'-webkit-filter': 'blur(0px)', 'filter': 'blur(0px)'})
+    $('.firstBlockRightUkr').removeClass('selectedLang');
+    $('.firstBlockRightRus').addClass('selectedLang');
+    $('.firstBlockButtons').children().eq(0).text('Услуги');
+    $('.firstBlockButtons').children().eq(1).text('Портфолио');
+    $('.firstBlockButtons').children().eq(2).text('Контакты');
+    $('.firstBlockButtons').children().eq(3).text('О нас');
+    $('.firstBlockMain').children().eq(0).text('Собери свой бизнес вместе с Puzzle Group');
+    $('.firstBlockMainCenterFirst').children().eq(1).text('Услуги дизайна, создание сайтов');
+    $('.firstBlockMainCenterSecond').children().eq(1).text('Продвижение в социальных сетях');
+    $('.firstBlockMainCenterThird').children().eq(1).text('Таргетированная, контекстная реклама');
+    $('.firstBlockMain').children().eq(2).text('Соберем все пазлы воедино: комплексно выведем Ваш бизнес на новый уровень');
+    $('.firstBlockMainButtons').children().eq(0).text('Услуги');
+    $('.firstBlockMainButtons').children().eq(1).text('Хочу консультацию');
+    $('#circleQuestion').text('ПОЯВИЛСЯ ВОПРОС?');
+    $('.secondBlockRight').children().eq(0).html('Наша цель - <span class="blue"> повысить качество </span> Вашего бизнеса');
+    $('.secondBlockRight01').children().eq(1).children().eq(0).text('Полный фарш!');
+    $('.secondBlockRight01').children().eq(1).children().eq(1).text('Обеспечим комплексный подход и индивидуальный план развития бизнеса. Выжмем все соки: вместе реализуем стратегию и отпразднуем результаты.');
+    $('.secondBlockRight02').children().eq(1).children().eq(1).text('Креативная команда молодых специалистов не упустит ваш бизнес из виду. Работаем на результат и выполняем работу качественно.');
+    $('.secondBlockRight03').children().eq(1).children().eq(0).text('Ценник');
+    $('.secondBlockRight03').children().eq(1).children().eq(1).text('Предлагаем пакеты услуг на любой карман. Получим возможный максимум исходя из бюджета.');
+    $('.secondBlockRight04').children().eq(1).children().eq(0).text('А можно так?');
+    $('.secondBlockRight04').children().eq(1).children().eq(1).text('Мы вас слушаем и слышим. Учтем все пожелания, проанализируем все предложения и соединим со своим профессионализмом.');
+    $('.thirdBlockRight').children().eq(0).text('Мы предлагаем');
+    $('.thirdBlockSmm li').eq(0).text('SMM-стратегия');
+    $('.thirdBlockSmm li').eq(1).text('Ведение аккаунта');
+    $('.thirdBlockSmm li').eq(2).text('Таргетированная реклама');
+    $('.thirdBlockSmm li').eq(3).text('Аналитика');
+    $('.thirdBlockSmm li').eq(4).text('Продвижение в социальных сетях');
+    $('.thirdBlockDesign li').eq(0).text('UI/UX Дизайн');
+    $('.thirdBlockDesign li').eq(1).text('Web-Дизайн');
+    $('.thirdBlockDesign li').eq(2).text('Логотип');
+    $('.thirdBlockDesign li').eq(3).text('Корпоративний дизайн');
+    $('.thirdBlockDevelopment li').eq(0).text('Интернет-магазин');
+    $('.thirdBlockDevelopment li').eq(1).text('Корпоративные сайты');
+    $('.thirdBlockDevelopment li').eq(2).text('Landing page');
+    $('.thirdBlockDevelopment li').eq(3).text('Интернет-порталы');
+    $('.thirdBlockDevelopment li').eq(4).text('Индивидуальные решения');
+    $('.thirdBlockDigital li').eq(0).text('E-mail маркетинг');
+    $('.thirdBlockDigital li').eq(1).text('Контекстная реклама (PPC)');
+    $('.thirdBlockDigital li').eq(2).text('Мессенджеры');
+    $('.thirdBlockDigital li').eq(3).text('Продвижение сайта (SEO)');
+    $('.thirdBlockDigital li').eq(4).text('Анализ ниши');
+    $('.fourthBlockOurs').text('Наши проекты');
+    $('.fourthBlockMainFirst .fourthBlockMainText').text('/Личный бренд');
+    $('.fourthBlockMainSecond .fourthBlockMainText').text('/Визитки');
+    $('.fourthBlockMainThird .fourthBlockMainText').text('/Мобильные версии');
+    $('.fourthBlockMainFourth .fourthBlockMainText').text('/Лендинг');
+    $('.checkAllCases p').text('Смотреть все кейсы');
+    $('.fifthBlockRightUp h2').html('<span class="blue">Мы лучшая </span>команда для воплощения ваших идей');
+    $('.fifthBlockRightUp p').text('Оставьте ваш номер телефона и наш менеджер свяжется с вами в течении дня');
+    $('.fifthBlockLeftContacts h2').text('Контакты');
+    $('.fifthBlockLeftSocial h2').text('Социальные сети');
+    $('.inputPhone').html('<input type="phone" placeholder="Номер телефона" name="user_phone">');
+    $('html').css('overflow-y','auto')
+  };
+    $('.firstBlockRightUkr').click(translateToUkr);
+    $('.firstBlockRightRus').click(translateToRus);
+    $('.ukr').click(translateToUkr);
+    $('.rus').click(translateToRus);
+
+    $('.firstBlockRightMenu').click(function(){
+      $('.menu').css('display', 'block');
+      $('.container').css({'-webkit-filter': 'blur(5px)', 'filter': 'blur(5px)'})
+      $('html').css('overflow-y','hidden');
+    });
+    $('.menuClose').click(function(){
+      $('.menu').css('display', 'none');
+      $('.container').css({'-webkit-filter': 'blur(0px)', 'filter': 'blur(0px)'})
+      $('html').css('overflow-y','auto');
+    });
 })
-
-// $(function(){
-//   var img;
-//   var div;
-//   $('.classHover').hover(
-//     function(e){
-//       img = null;
-//       div = null;
-//       img = event.target.querySelector('.fourthBlockMainFirstImg');
-//       div = event.target.querySelector('.fourthBlockMainFirstDiv');
-//       img.style.display = 'none';
-//       div.style.display = 'block';
-//     },function(e){
-//       img.style.display = 'block';
-//       div.style.display = 'none';
-//     });
-// })
-
-// $( "li" ).hover(
-//   function() {
-//     $( this ).append( $( "<span> ***</span>" ) );
-//   }, function() {
-//     $( this ).find( "span" ).last().remove();
-//   }
-// );
-// function scrolled() {
-//   var pageY = window.pageYOffset;
-//   if(pageY > 0 && pageY < 1700) {
-//     colorMenu(1);
-//     return;
-//   }
-//   if(pageY > 1700 && pageY < 3200){
-//     colorMenu(3);
-//     return;
-//   }
-//   if(pageY > 3200 && pageY < 5000){
-//     colorMenu(5);
-//     return;
-//   }
-//   if(pageY > 5000){
-//     colorMenu(7);
-//     return;
-//   }
-// }
-
-// function colorMenu(id) {
-//   var menu = document.getElementById('secondBlockMenu').childNodes;
-//   let value = id - 2;
-//   if(id != 1 && menu[value].innerText[0] == "—"){
-//     menu[value].innerText = menu[value].innerText.slice(1);
-//     menu[value].classList.remove('blue');
-//   }
-//   value = id + 2;
-//   if(id != 7 && menu[value].innerText[0] == "—"){
-//     menu[value].innerText = menu[value].innerText.slice(1);
-//     menu[value].classList.remove('blue');
-//   }
-//   if(menu[id].innerText[0] != "—"){
-//     menu[id].innerHTML = "—" + menu[id].innerText;
-//     menu[id].classList.add('blue');
-//   }
-// }
-
-// function colorMenu(id) {
-//   var menu = document.getElementById('secondBlockMenu').childNodes;
-//   for(let i = 1; i <=7; i += 2){
-//     if(i != id && menu[i].innerText[0] == "—"){
-//       menu[i].innerText = menu[i].innerText.slice(1);
-//       menu[i].classList.remove('blue');
-//       console.log(1);
-//     }
-//     console.log(2);
-//   }
-//   if(menu[id].innerText[0] != "—"){
-//     menu[id].innerHTML = "—" + menu[id].innerText;
-//     menu[id].classList.add('blue');
-//   }
-// }
-
-// function over(e) {
-//   console.log(event.target)
-//   if(event.target.querySelector('.fourthBlockMainFirstImg').style.display != 'none'){
-//   event.target.querySelector('.fourthBlockMainFirstImg').style.display = 'none';
-//   event.target.querySelector('.fourthBlockMainFirstDiv').style.display = 'block';
-// }
-// }
-//
-// function out(e) {
-//   event.target.querySelector('.fourthBlockMainFirstImg').style.display = 'block';
-//   event.target.querySelector('.fourthBlockMainFirstDiv').style.display = 'none';
-//
-// }
-
-//
-// document.querySelectorAll('.fourthBlock')
-//
-// document.getElementById('fourthBlockMainFirst').onmouseover = function() {
-//   document.getElementById('fourthBlockMainFirstImg').style.display = 'none';
-//   document.getElementById('fourthBlockMainDiv').style.display = 'block';
-// }
-//
-// document.getElementById('fourthBlockMainFirst').onmouseout = function() {
-//   document.getElementById('fourthBlockMainFirstImg').style.display = 'block';
-//   document.getElementById('fourthBlockMainDiv').style.display = 'none';
-// }
-
 
 
 function randomRotateAndOpacity() {
-  // document.getElementById('firstLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
-  // document.getElementById('secondLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
-  // document.getElementById('thirdLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
-  // document.getElementById('firstLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
-  // document.getElementById('secondLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
-  // document.getElementById('thirdLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
 
   coords = (Math.floor(Math.random() * (3 - 2 + 1)) + 2);
   document.getElementById('secodLineCircle').style.top =  document.getElementById('secodLineCircle').style.left =
@@ -196,29 +222,6 @@ function randomRotateAndOpacity() {
   setTimeout(randomRotateAndOpacity, 2500);
 }
 
-// toUpButtonBottom.onclick = function () {
-//   window.scrollTo(0, 0)
-// }
-//
-// toUpButton.onclick = function () {
-//   window.scrollTo(0, 0)
-// }
-
-// menuFirst.onclick = function () {
-//   window.scrollTo(0, 977);
-// }
-//
-// menuSecond.onclick = function() {
-//   window.scrollTo(0, 2113);
-// }
-//
-// menuThird.onclick = function() {
-//   window.scrollTo(0, 3441);
-// }
-//
-// menuFourth.onclick = function() {
-//   window.scrollTo(0, 5999);
-// }
 
 setTimeout(function(){
   let preloader = document.getElementById('preloaderLogo').style;

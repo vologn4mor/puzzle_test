@@ -43,6 +43,16 @@ overflow: hidden;
 overflow-x: hidden;
 }
 
+.firstBlockButtons a:hover {
+  border-bottom: 5px solid white;
+  transition: 0.5s;
+}
+
+.firstBlockButtons a{
+  transition: 0.5s;
+}
+
+
 .firstBlockLeft {
   display: flex;
   max-width: 980px;
@@ -192,10 +202,6 @@ line-height: 17px;
 
 .firstBlockMainButtons {
   margin-top: 60px;
-}
-
-.menu:hover {
-  cursor: pointer;
 }
 
 .bold, .boldMenu {
@@ -582,7 +588,7 @@ span.blue {
 }
 
 .fifthBlockRightUp > p:nth-child(2) {
-  max-width: 455px;
+  width: 530px;
   font-size: 21px;
   line-height: 30px;
   margin-left: 100px;
@@ -598,8 +604,9 @@ span.blue {
 }
 
 input[type=phone] {
-  background-color: #3335CF;
+  background-color: #181ACF;
   border: 0px solid white;
+  border-bottom: 2px solid white;
   outline: none;
   color: white;
   margin: 1px 0;
@@ -607,16 +614,15 @@ input[type=phone] {
 
 input[type=phone]:focus {
   border: 0px solid white;
+  border-bottom: 2px solid white;
   outline: none;
 }
 
-
-
 .fifthBlockRightDown {
-background-color: #3335CF;
+background-color: #181ACF;
 position: relative;
 right: 1px;
-top: -1px;
+top: 0px;
 }
 
 .fifthBlockRightDown {
@@ -809,4 +815,113 @@ width: 362px;
   font-size: 55px;
   line-height: 60px;
   font-weight: 600;
+}
+
+.vodafone {
+  padding-top: 12px;
+}
+
+.email {
+  padding-top: 32px;
+}
+
+.fifthBlockRightDown > div:nth-child(2) > form:nth-child(1) {
+display: flex;
+justify-content: space-around;
+width: 570px;
+}
+
+.inputPhone {
+  height: 25px;
+  margin: auto 0;
+}
+.firstBlockRightUkr, .firstBlockRightRus{
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
+  transition: 0.5s;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.menu *{
+  color: white;
+}
+
+.menuTopLeft p, .menuClose{
+  font-weight: bold;
+  font-size: 28px;
+  margin: 25px 50px;
+  margin-bottom: 10px;
+}
+
+.menuTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuCenter {
+  max-width: 219px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 74px; */
+}
+
+.menuCenter *{
+  margin: 0 auto;
+}
+
+.menuSocials {
+  display: flex;
+  max-width: 200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.menuCenter > p:nth-child(1) {
+font-weight: bold;
+font-size: 30px;
+line-height: 29px;
+margin-bottom: 35px;
+}
+
+.languages{
+  display: flex;
+}
+.ukr, .rus {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 19px;
+}
+.ukr {
+  margin-right: 20px;
+}
+
+.menuCenter a:nth-child(-n+5) {
+  margin-bottom: 25px;
+}
+/* .menuCenter a:nth-child(5) {
+  margin-bottom: 100px;
+} */
+
+.menuCenter a:nth-last-child(-n+4){
+  font-weight: 700;
+font-size: 30px;
+line-height: 29px;
+margin-bottom: 15px;
+}
+
+.blueLang {
+  color: #3335CF;
 }
