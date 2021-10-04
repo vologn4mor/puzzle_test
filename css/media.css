@@ -2,7 +2,6 @@
   .fourthBlock {
     -webkit-transform: scale(0.9) translate(-4.5%, 25% );
     -moz-transform: scale(0.9) translate(-4.5%, 18% );
-    -o: scale(0.9) translate(-4.5%, -18% );
     height: 1300px;
   }
   .fifthBlockRightDown {
@@ -356,7 +355,7 @@ top: 75px;
     display: block;
   }
   .fourthBlock {
-    -webkit-transform: scale(0.5) translate(-54%, 89% );
+    -webkit-transform: scale(0.5) translate(-54%, -89% );
     -moz-transform: scale(0.5) translate(-54%, 89% );
     top: 10px;
     margin-top: 855px;
