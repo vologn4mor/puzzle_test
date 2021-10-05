@@ -16,6 +16,7 @@ $(function(){
       // if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
         $('.parallax').css({'background-attachment':'inherit'})
       // }
+      $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'css/media_mobile.css') );
       var winHeight = $(window).height();
       var target1 = $('#fourthBlockMainFirst');
       var targetPos1 = target1.offset().top + 400;
