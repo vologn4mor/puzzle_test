@@ -355,8 +355,9 @@ top: 75px;
     display: block;
   }
   .fourthBlock {
-    -webkit-transform: scale(0.5) translate(-54%, -189% );
-    -moz-transform: scale(0.5) translate(-54%, 89% );
+    /* -moz-transform: scale(0.5) translate(-54%, 89% );
+    -webkit-transform: scale(0.5) translate(-54%, 89% ); */
+    transform: scale(0.5) translate(-54%, 89% );
     top: 10px;
     margin-top: 855px;
   }
