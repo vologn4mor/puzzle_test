@@ -940,3 +940,7 @@ margin: 0 auto;
 .fourthBlockMainFirstDiv {
   margin: 52px 32px;
 }
+
+.thirdBlockRight > h2:nth-child(1) {
+  margin-top: 280px;
+}
