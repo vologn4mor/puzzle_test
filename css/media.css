@@ -425,6 +425,9 @@ margin-top: 0px;
 }
 
 @media (max-width: 710px) {
+  .thirdBlockRight > h2:nth-child(1) {
+    margin-top: 180px;
+  }
   .fourthBlockOurs {
     font-size: 30px;
   }
@@ -525,7 +528,6 @@ margin-top: 0px;
   /* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle(copy/index.html */
 
   .thirdBlockRight > h2:nth-child(1) {
-    /* margin-top: 0px; */
     margin-bottom: 0px;
   }
 
